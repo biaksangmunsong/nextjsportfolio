@@ -1,23 +1,26 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 media_folder: public/img
 public_folder: img
-site_url: https://nextportfolio.netlify.app
+site_url: https://nextport-folio.netlify.app
+
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "about_page"
+    label: "About page"
+    create: false
     files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: "Cats"
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+      - name: "about_page_content"
+        label: "About page content"
+        file: "/page-data/aboutPage.md"
+        format: "frontmatter"
+        fields:
+          - name: "title"
+            label: "Page title"
+            widget: "string"
+          - name: "desc"
+            label: "Page description"
+            widget: "string"
+          - name: "body"
+            label: "Body"
+            widget: "markdown"
