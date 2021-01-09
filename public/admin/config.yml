@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 media_folder: public/img
 public_folder: img
-site_url: https://nextportfolio.netlify.app
+site_url: https://youthful-goldwasser-d99e96.netlify.app/
 collections:
   - name: "pages"
     label: "Pages"
