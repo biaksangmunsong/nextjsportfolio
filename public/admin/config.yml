@@ -4,21 +4,22 @@ backend:
 media_folder: public/img
 public_folder: img
 site_url: https://nextport-folio.netlify.app
+
 collections:
   - name: "about_page"
     label: "About page"
     create: false
     files:
-    - name: "about_page_content"
-      label: "About page content"
-      file: "/data/aboutPage.md"
-      fields:
-        - name: "page_title"
-          label: "Page title"
-          widget: "string"
-        - name: "page_description"
-          label: "Page description"
-          widget: "string"
-        - name: "body"
-          label: "Body"
-          widget: "markdown"
+      - name: "about_page_content"
+        label: "About page content"
+        file: "/page-data/aboutPage.md"
+        fields:
+          - name: "page_title"
+            label: "Page title"
+            widget: "string"
+          - name: "page_description"
+            label: "Page description"
+            widget: "string"
+          - name: "body"
+            label: "Body"
+            widget: "markdown"
