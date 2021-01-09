@@ -15,10 +15,10 @@ collections:
         file: "/page-data/aboutPage.md"
         format: "frontmatter"
         fields:
-          - name: "page_title"
+          - name: "title"
             label: "Page title"
             widget: "string"
-          - name: "page_description"
+          - name: "desc"
             label: "Page description"
             widget: "string"
           - name: "body"
