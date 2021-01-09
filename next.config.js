@@ -8,6 +8,5 @@ module.exports = {
             }
         )
         return cfg;
-    },
-    target: "serverless"
+    }
 }
