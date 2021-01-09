@@ -14,6 +14,7 @@ collections:
         label: "About page content"
         file: "/page-data/aboutPage.md"
         format: "frontmatter"
+        extension: "md"
         fields:
           - name: "title"
             label: "Page title"
