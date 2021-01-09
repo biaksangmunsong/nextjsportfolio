@@ -2,7 +2,7 @@ import Head from "next/head"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import htmlContent from "../functions/htmlContent"
+import htmlContent from "../actions/htmlContent"
 import HomePage from "../styles/styled-components/pages/HomePage"
 import Header from "../components/Header"
 

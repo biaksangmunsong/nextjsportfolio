@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import matter from "gray-matter"
 import fs from "fs"
 import path from "path"
-import htmlContent from "../functions/htmlContent"
+import htmlContent from "../actions/htmlContent"
 import AboutPage from "../styles/styled-components/pages/AboutPage"
 
 const About = ({ metaData, content }) => {
