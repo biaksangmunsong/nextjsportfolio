@@ -11,9 +11,7 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     var PostPreview = createClass({
       render: function () {
-        var entry = this.props.entry;
         return h(
-          "div",
           h("div", {}, this.props.widgetFor("body"))
         );
       },
