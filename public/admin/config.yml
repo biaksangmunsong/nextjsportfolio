@@ -23,8 +23,4 @@ collections:
             widget: "string"
           - name: "body"
             label: "Body"
-<<<<<<< HEAD
             widget: "markdown"
-=======
-            widget: "markdown"
->>>>>>> c4cea7e4b50a740f192cdc7d8d829704f1844a7d
