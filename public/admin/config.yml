@@ -19,7 +19,7 @@ collections:
           - name: "title"
             label: "Page title"
             widget: "string"
-          - name: "description"
+          - name: "desc"
             label: "Page description"
             widget: "string"
           - name: "body"
