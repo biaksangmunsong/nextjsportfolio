@@ -22,6 +22,6 @@ collections:
           - name: "desc"
             label: "Page description"
             widget: "string"
-          - name: "content"
-            label: "Content"
+          - name: "something"
+            label: "Something"
             widget: "markdown"
