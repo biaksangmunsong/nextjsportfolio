@@ -10,7 +10,7 @@ collections:
     label: "About page"
     create: false
     files:
-      - name: "about_page_content"
+      - name: "aboutPage"
         label: "About page content"
         file: "/page-data/aboutPage.md"
         format: "frontmatter"
