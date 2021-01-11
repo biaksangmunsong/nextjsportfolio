@@ -10,21 +10,18 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
-      CMS.registerPreviewStyle(
-        "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
-      );
-      CMS.registerPreviewStyle("/styles/content.module.css");
+      CMS.registerPreviewStyle("/admin/styles/about-page-preview.css")
       var PagePreview = createClass({
         render: function () {
-          var entry = this.props.entry;
+          var entry = this.props.entry
           return h(
             "div",
             { className: "content" },
-            h("div", {}, this.props.widgetFor("body"))
-          );
+            this.props.widgetFor("body")
+          )
         },
-      });
-      CMS.registerPreviewTemplate("about_page_content", PagePreview);
+      })
+      CMS.registerPreviewTemplate("about_page_content", PagePreview)
     </script>
   </body>
 </html>

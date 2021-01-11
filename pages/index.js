@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Head from "next/head"
 import fs from "fs"
 import path from "path"
@@ -7,6 +8,18 @@ import HomePage from "../styles/styled-components/pages/HomePage"
 import Header from "../components/Header"
 
 const Home = ({ metaData, content }) => {
+
+  useEffect(()=>{
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user){
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/"
+          })
+        }
+      })
+    }
+  }, [])
   
   return (
     <>

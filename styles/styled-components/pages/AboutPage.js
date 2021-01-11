@@ -73,6 +73,12 @@ const AboutPage = styled.div`
                     text-decoration: underline;
                 }
             }
+
+            img {
+                display: block;
+                width: 100%;
+                margin-bottom: 50px;
+            }
         }
     }
 `
