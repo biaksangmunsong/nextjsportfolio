@@ -16,10 +16,10 @@
     "remark-parse": "^9.0.0",
     "remark-react": "^8.0.0",
     "styled-components": "^5.2.1",
-    "unified": "^9.2.0"
+    "unified": "^9.2.0",
+    "@netlify/plugin-nextjs": "^1.0.5"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^1.0.5",
     "babel-plugin-styled-components": "^1.12.0"
   }
 }
