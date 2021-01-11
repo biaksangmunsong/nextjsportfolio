@@ -8,20 +8,16 @@ site_url: https://nextport-folio.netlify.app
 collections:
   - name: "about_page"
     label: "About page"
-    create: false
-    files:
-      - name: "about_page_content"
-        label: "About page content"
-        file: "/page-data/aboutPage.md"
-        format: "frontmatter"
-        extension: "md"
-        fields:
-          - name: "title"
-            label: "Page title"
-            widget: "string"
-          - name: "desc"
-            label: "Page description"
-            widget: "string"
-          - name: "body"
-            label: "Body"
-            widget: "markdown"
+    file: "/page-data/aboutPage.md"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - name: "title"
+        label: "Page title"
+        widget: "string"
+      - name: "desc"
+        label: "Page description"
+        widget: "string"
+      - name: "body"
+        label: "Body"
+        widget: "markdown"
