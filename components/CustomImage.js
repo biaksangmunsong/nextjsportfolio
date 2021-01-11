@@ -1,13 +1,11 @@
-import Image from "next/image"
 import PropTypes from "prop-types"
 
 const CustomImage = props => {
 
-    // If the image is local it will start with a "/"
-    // Otherwise it'll be something like "https://"
+    let imageName = props.src.split("/")[props.src.split("/").length-1]
 
     return !props.src.startsWith("http") ?
-    <img src={ `https://res.cloudinary.com/biaksangmunsong/image/upload/_scale,f_auto,q_auto,w_1000/${ props.src }` }/> :
+    <img src={ `https://res.cloudinary.com/biaksangmunsong/image/upload/_scale,f_auto,q_auto,w_1000/${ imageName }` }/> :
     <img { ...props }/>
 
 }
