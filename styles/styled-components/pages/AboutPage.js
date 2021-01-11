@@ -75,16 +75,40 @@ const AboutPage = styled.div`
             }
         }
 
-        img {
+        .image__wrapper {
             display: block;
             width: 100%;
+            position: relative;
             margin-bottom: 50px;
+
+            &.not-optimized {
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &.optimized {
+                div {
+                    z-index: 2;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    padding-bottom: 56%;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
         }
 
         div,
         p {
             &:last-child {
-                img {
+                .image__wrapper {
                     margin-bottom: 0;
                 }
             }
