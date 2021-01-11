@@ -50,7 +50,7 @@
     }
 }
 
-.content .__paragraph {
+.content p {
     display: block;
     width: 100%;
     line-height: 25px;
@@ -62,20 +62,24 @@
     margin-bottom: 50px;
 }
 
-.content .__paragraph:last-of-type {
+.content p:last-of-type {
     margin-bottom: 0;
 }
 
-.content .__paragraph a {
+.content p a {
     color: #8a2be2;
 }
 
-.content .__paragraph a:hover {
+.content p a:hover {
     text-decoration: underline;
 }
 
-.content .__paragraph img {
+.content p img {
     display: block;
     width: 100%;
     margin-bottom: 50px;
+}
+
+.content p:last-child img {
+    margin-bottom: 0;
 }
