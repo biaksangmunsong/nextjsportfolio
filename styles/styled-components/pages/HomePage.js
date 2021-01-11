@@ -31,17 +31,7 @@ const HomePage = styled.div`
             }
         }
 
-        img {
-            display: block;
-            width: 100%;
-            margin-bottom: 0;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        .__paragraph {
+        p {
             display: block;
             width: 100%;
             line-height: 25px;
@@ -56,6 +46,27 @@ const HomePage = styled.div`
 
                 &:hover {
                     text-decoration: underline;
+                }
+            }
+
+            &:last-child {
+                img {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        div,
+        p {
+            &:last-child {
+                img {
+                    margin-bottom: 0;
                 }
             }
         }

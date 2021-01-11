@@ -78,17 +78,13 @@ const AboutPage = styled.div`
         img {
             display: block;
             width: 100%;
-            margin-bottom: 0;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
+            margin-bottom: 50px;
         }
 
         div,
         p {
             &:last-child {
-                .image__wrapper {
+                img {
                     margin-bottom: 0;
                 }
             }
