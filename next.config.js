@@ -1,4 +1,6 @@
-module.exports = {
+import withOptimizedImages from "next-optimized-images"
+
+module.exports = withOptimizedImages({
     target: "serverless",
     webpack: (cfg) => {
         cfg.module.rules.push(
@@ -10,4 +12,4 @@ module.exports = {
         )
         return cfg;
     }
-}
+})
