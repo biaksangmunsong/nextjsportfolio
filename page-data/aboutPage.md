@@ -8,7 +8,7 @@ desc: Next.js is an open-source React front-end development web framework that
 
 **Next.js** is an [open-source](https://en.wikipedia.org/wiki/Open-source) [React](https://en.wikipedia.org/wiki/React_(web_framework)) front-end development web framework that enables functionality such as [server-side rendering](https://en.wikipedia.org/wiki/Server-side_scripting) and generating [static websites](https://en.wikipedia.org/wiki/Static_web_page) for React based web applications. It is a production-ready framework that allows developers to quickly create static and dynamic [JAMstack](https://en.wikipedia.org/wiki/JAMstack) websites and is used widely by many large companies. Next.js is one of several recommended "toolchains" available when starting a new React app, all of which provide a layer of abstraction to aid in common tasks. Traditional React apps render all their content in the client-side browser, Next.js is used to extend this functionality to include applications rendered on the server side. The copyright and trademarks for Next.js are owned by Vercel. On July 27, 2020 Next.js version 9.5 was announced, adding new capabilities including incremental static regeneration, rewrites, and redirect support.
 
-![Image of next js](img/m8c20gchf7231_qa4d9h.jpg "Image of next js")
+![Image of next js](img/pexels-sebastiaan-stam-1097456_qzvt9f.jpg "Image of next js")
 
 ## Background
 
