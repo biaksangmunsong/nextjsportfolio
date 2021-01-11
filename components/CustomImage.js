@@ -7,14 +7,7 @@ const CustomImage = props => {
     // Otherwise it'll be something like "https://"
 
     return !props.src.startsWith("http") ?
-    <div className="image__wrapper optimized">
-        <Image
-            src={ props.src }
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-        />
-    </div> :
+    <img src="https://res.cloudinary.com/<cloud_name>/<resource_type>/<type>/<transformations>/{{image}}"/> :
     <div className="image__wrapper not-optimized">
         <img { ...props }/>
     </div>

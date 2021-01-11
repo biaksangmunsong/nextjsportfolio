@@ -31,33 +31,13 @@ const HomePage = styled.div`
             }
         }
 
-        .image__wrapper {
+        img {
             display: block;
             width: 100%;
-            position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 0;
 
-            &.not-optimized {
-                img {
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-
-            &.optimized {
-                div {
-                    z-index: 2;
-                }
-
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    padding-bottom: 56%;
-                    position: relative;
-                    z-index: 1;
-                }
+            &:last-child {
+                margin-bottom: 0;
             }
         }
 

@@ -5,6 +5,13 @@ media_folder: public/img
 public_folder: img
 site_url: https://nextport-folio.netlify.app
 
+media_library:
+  name: cloudinary
+  output_filename_only: true
+  config:
+    cloud_name: "biaksangmunsong"
+    api_key: "899542633858753"
+
 collections:
   - name: "pages"
     label: "Pages"
