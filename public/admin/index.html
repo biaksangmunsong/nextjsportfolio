@@ -12,16 +12,15 @@
     <script>
       CMS.registerPreviewStyle("/admin/styles/about-page-preview.css")
       var PagePreview = createClass({
-        render: function () {
-          var entry = this.props.entry
+        render: function (){
           return h(
             "div",
-            { className: "content" },
+            { className: "about_page_content" },
             this.props.widgetFor("body")
           )
         },
       })
-      CMS.registerPreviewTemplate("about_page_content", PagePreview)
+      CMS.registerPreviewTemplate("about_page", PagePreview)
     </script>
   </body>
 </html>

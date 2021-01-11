@@ -1,4 +1,4 @@
-.content {
+.about_page_content {
     display: block;
     width: 90%;
     max-width: 1000px;
@@ -6,7 +6,7 @@
     padding: 50px 0;
 }
 
-.content h1 {
+.about_page_content h1 {
     display: block;
     width: 100%;
     line-height: 50px;
@@ -17,18 +17,18 @@
     margin-bottom: 50px;
 }
 
-.content h1 code {
+.about_page_content h1 code {
     color: #8a2be2;
 }
 
 @media screen and (max-width: 700px){
-    .content h1 {
+    .about_page_content h1 {
         line-height: 40px;
         font-size: 30px;
     }
 }
 
-.content h2 {
+.about_page_content h2 {
     display: block;
     width: 100%;
     line-height: 40px;
@@ -39,18 +39,18 @@
     margin-bottom: 50px;
 }
 
-.content h2 code {
+.about_page_content h2 code {
     color: #8a2be2;
 }
 
 @media screen and (max-width: 700px){
-    .content h2 code {
+    .about_page_content h2 code {
         line-height: 32px;
         font-size: 25px;
     }
 }
 
-.content p {
+.about_page_content p {
     display: block;
     width: 100%;
     line-height: 25px;
@@ -62,25 +62,25 @@
     margin-bottom: 50px;
 }
 
-.content p:last-of-type {
+.about_page_content p:last-of-type {
     margin-bottom: 0;
 }
 
-.content p a {
+.about_page_content p a {
     color: #8a2be2;
 }
 
-.content p a:hover {
+.about_page_content p a:hover {
     text-decoration: underline;
 }
 
-.content img {
+.about_page_content img {
     display: block;
     width: 100%;
     margin-bottom: 50px;
 }
 
-.content div:last-child img,
-.content p:last-child img {
+.about_page_content div:last-child img,
+.about_page_content p:last-child img {
     margin-bottom: 0;
 }
