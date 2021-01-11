@@ -51,7 +51,7 @@ const AboutPage = styled.div`
             }
         }
 
-        .__paragraph {
+        p {
             display: block;
             width: 100%;
             line-height: 25px;
@@ -73,11 +73,20 @@ const AboutPage = styled.div`
                     text-decoration: underline;
                 }
             }
+        }
 
-            img {
-                display: block;
-                width: 100%;
-                margin-bottom: 50px;
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        div,
+        p {
+            &:last-child {
+                img {
+                    margin-bottom: 0;
+                }
             }
         }
     }

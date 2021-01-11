@@ -74,12 +74,13 @@
     text-decoration: underline;
 }
 
-.content p img {
+.content img {
     display: block;
     width: 100%;
     margin-bottom: 50px;
 }
 
+.content div:last-child img,
 .content p:last-child img {
     margin-bottom: 0;
 }
