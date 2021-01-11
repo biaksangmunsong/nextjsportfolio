@@ -12,6 +12,8 @@
     <script>
       CMS.registerPreviewStyle("/admin/styles/page-preview.css")
       var PagePreview = createClass({
+        console.log(this.props.widgetFor("body"))
+        
         render: function (){
           return h(
             "div",
