@@ -1,15 +1,15 @@
-const withOptimizedImages = require("next-optimized-images")
-
-module.exports = withOptimizedImages({
+module.exports = {
     target: "serverless",
-    webpack: (cfg) => {
+    webpack: cfg => {
         cfg.module.rules.push(
             {
                 test: /\.md$/,
-                loader: 'frontmatter-markdown-loader',
-                options: { mode: ['react-component'] }
+                loader: "frontmatter-markdown-loader",
+                options: {
+                    mode: ["react-component"]
+                }
             }
         )
-        return cfg;
+        return cfg
     }
-})
+}
