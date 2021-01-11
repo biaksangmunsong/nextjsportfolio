@@ -3,10 +3,7 @@ import PropTypes from "prop-types"
 
 const CustomLink = ({ children, href }) => {
 
-  // If the link is local it will start with a "/"
-  // Otherwise it'll be something like "https://"
-
-  return href.startsWith("/") || href === "" ? (
+  return (href === "" || !href.startsWith("http")) ? (
     <Link href={href}>
       <a>
         { children }
