@@ -78,15 +78,31 @@ const AboutPage = styled.div`
         img {
             display: block;
             width: 100%;
-            margin-bottom: 50px;
         }
 
-        div,
-        p {
-            &:last-child {
-                img {
-                    margin-bottom: 0;
-                }
+        .youtube__video {
+            display: block;
+            width: 100%;
+            position: relative;
+            background: #000;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                padding-bottom: 56%;
+                position: relative;
+                z-index: 1;
+            }
+
+            iframe {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
             }
         }
     }
