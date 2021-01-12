@@ -10,6 +10,8 @@ desc: Next.js is an open-source React front-end development web framework that
 
 ![Image of next js](/static/images/anonymous.jpg "Image of next js")
 
+![Anonymous](static/images/original/anonymous.jpg "Anonymous")
+
 ## Background
 
 Next.js is a React framework that enables several extra features, including server-side rendering and generating static websites.\[6] React is a JavaScript library that is traditionally used to build web applications rendered in the client's browser with Javascript. Developers recognize several problems with this strategy however, such as not catering to users who do not have access to javascript or have disabled it, potential security issues, significantly extended page loading times, and it can harm the site's overall search engine optimization.\[7] Frameworks such as Next.js sidestep these problems by allowing some or all of the website to be rendered on the server-side before being sent to the client.\[7] Next.js is one of the most popular components available in React. It is one of several recommended "toolchains" available when starting a new app, all of which provide a layer of abstraction to aid in common tasks. Next.js requires Node.js and can be initialized using Node Package Manager.
