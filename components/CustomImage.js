@@ -17,7 +17,7 @@ const CustomImage = props => {
 
 }
 
-CustomLink.propTypes = {
+CustomImage.propTypes = {
     src: PropTypes.string.isRequired
 }
 
