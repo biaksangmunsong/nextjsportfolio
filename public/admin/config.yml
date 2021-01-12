@@ -33,8 +33,8 @@ collections:
           - name: "description"
             label: "Page description"
             widget: "string"
-          - name: "content"
-            label: "Page content"
+          - name: "body"
+            label: "Body"
             fields:
               - name: "heading1"
                 label: "Heading 1"
