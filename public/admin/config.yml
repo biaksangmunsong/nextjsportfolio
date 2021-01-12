@@ -27,13 +27,13 @@ collections:
       - name: "home_page"
         label: "Home page"
         file: "page-data/homePage.json"
-        format: "json"
+        format: "json-frontmatter"
         extension: "json"
         fields:
           - { name: "title", label: "Page title", widget: "string" }
           - { name: "description", label: "Page description", widget: "string" }
-          - name: "content"
-            label: "Page content"
+          - name: "body"
+            label: "Body"
             widget: "object"
             fields:
               - { name: "heading1", label: "Heading 1", widget: "text" }
