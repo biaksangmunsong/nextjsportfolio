@@ -5,12 +5,12 @@ const PagePreview = createClass({
     render: function(){
         var entry = this.props.entry
         var body = entry.getIn(["data", "body"])
-        console.log(htmlContent(body))
+        console.log(body)
     
         return h(
             "div",
             { className: "about_page_content" },
-            htmlContent(body)
+            this.props.widgetFor("body")
         )
     }
 })
