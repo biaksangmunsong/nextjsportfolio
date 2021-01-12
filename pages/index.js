@@ -35,8 +35,8 @@ const Home = ({ pageData }) => {
           <h1>{ pageData.content.heading1 }</h1>
           <img
             src={ require(`../static/images/${ imageName(pageData.content.coverImage.src) }?size=1000`) }
-            alt={ pageData.content.coverImage.alt }
-            title={ pageData.content.coverImage.title }
+            // alt={ pageData.content.coverImage.alt }
+            // title={ pageData.content.coverImage.title }
           />
           <p>{ pageData.content.paragraph1 }</p>
         </div>

@@ -50,6 +50,7 @@ collections:
               - name: "paragraph1"
                 label: "Paragraph 1"
                 widget: "text"
+      
       - name: "about_page"
         label: "About page"
         file: "page-data/aboutPage.md"
