@@ -43,7 +43,7 @@ collections:
 
       - name: "home_page"
         label: "Home page"
-        file: "page-data/homePage.md"
+        file: "page-data/indexPage.md"
         format: "frontmatter"
         extension: "md"
         fields:
