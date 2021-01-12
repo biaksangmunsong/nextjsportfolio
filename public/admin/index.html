@@ -11,14 +11,12 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
       CMS.registerPreviewStyle("/admin/styles/page-preview.css")
-
-      import htmlContent from "../../actions/htmlContent"
       const PagePreview = createClass({
         render: function (){
           return h(
             "div",
             { className: "about_page_content" },
-            htmlContent(this.props.widgetFor("body"))
+            this.props.widgetFor("body")
           )
         },
       })
