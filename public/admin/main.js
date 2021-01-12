@@ -1,4 +1,4 @@
-// import htmlContent from "../../actions/htmlContent"
+const htmlContent = require("../../actions/htmlContent")
 CMS.registerPreviewStyle("/admin/styles/page-preview.css")
 
 const PagePreview = createClass({
