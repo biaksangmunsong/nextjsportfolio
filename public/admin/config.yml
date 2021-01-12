@@ -23,12 +23,11 @@ collections:
     create: false
     editor:
       preview: false
+    preview_path: "pages"
     files:
       - name: "home_page"
         label: "Home page"
-        file: "/page-data/homePage.json"
-        format: "json-frontmatter"
-        extension: "json"
+        file: "page-data/homePage.json"
         fields:
           - name: "title"
             label: "Page title"
@@ -52,7 +51,7 @@ collections:
                 widget: "text"
       - name: "about_page"
         label: "About page"
-        file: "/page-data/aboutPage.md"
+        file: "page-data/aboutPage.md"
         format: "frontmatter"
         extension: "md"
         fields:
