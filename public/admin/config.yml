@@ -18,6 +18,8 @@ collections:
   - name: "pages"
     label: "Pages"
     create: false
+    editor:
+      preview: false
     files:
       - name: "about_page"
         label: "About page"
