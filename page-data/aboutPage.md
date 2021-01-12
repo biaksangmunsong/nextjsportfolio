@@ -10,7 +10,7 @@ desc: Next.js is an open-source React front-end development web framework that
 
 ![Image of next js](/static/images/anonymous.jpg "Image of next js")
 
-![Anonymous](static/images/original/anonymous.jpg "Anonymous")
+![Anonymous](static/images/anonymous.jpg "Anonymous")
 
 ## Background
 
