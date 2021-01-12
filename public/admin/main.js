@@ -5,7 +5,7 @@ const PagePreview = createClass({
     render: function(){
         var entry = this.props.entry
         var body = entry.getIn(["data", "body"])
-        console.log(body)
+        console.log(htmlContent(body))
     
         return h(
             "div",
