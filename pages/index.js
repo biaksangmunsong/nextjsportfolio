@@ -48,7 +48,7 @@ const Home = ({ pageData }) => {
 export const getStaticProps = () => {
 
   let pageData = fs.readFileSync(path.join(process.cwd(), "page-data", "indexPage.json"))
-  pageData = JSON.parse(pageData).home_page
+  pageData = JSON.parse(pageData)
 
   return {
     props: {
