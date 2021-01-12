@@ -27,7 +27,7 @@ collections:
       - name: "home_page"
         label: "Home page"
         file: "page-data/homePage.json"
-        format: "json"
+        format: "json-frontmatter"
         extension: "json"
         fields:
           - { name: "title", label: "Page title", widget: "string" }
