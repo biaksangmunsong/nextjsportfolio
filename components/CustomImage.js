@@ -8,7 +8,7 @@ const CustomImage = props => {
 
     return props.src.startsWith("http") ?
     <img { ...props }/> :
-    props.src.startsWith("/static/images/") ?
+    (props.src.startsWith("/static/images/") || props.src.startsWith("static/images/")) ?
     <img
         { ...props }
         src={ require(`../static/images/${ imageName(props.src) }?size=1000`) }

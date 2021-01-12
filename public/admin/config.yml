@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 # publish_mode: editorial_workflow
-media_folder: "static/images"
+media_folder: "/static/images"
 site_url: https://nextport-folio.netlify.app
 
 # media_library:
@@ -26,7 +26,7 @@ collections:
 
       - name: "home_page"
         label: "Home page"
-        file: "page-data/indexPage.json"
+        file: "/page-data/indexPage.json"
         fields:
           - name: "title"
             label: "Page title"
@@ -61,7 +61,7 @@ collections:
       
       - name: "about_page"
         label: "About page"
-        file: "page-data/aboutPage.md"
+        file: "/page-data/aboutPage.md"
         preview_path: "about"
         fields:
           - name: "title"
