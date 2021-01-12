@@ -1,0 +1,13 @@
+{
+    "title": "Next.js portfolio",
+    "description": "Hello I'm Next.js, I'm a react server side renderer and also a static site generator",
+    "content": {
+        "heading1": "Hello, I'm React.js, I'm a react server side renderer and also a static site generator",
+        "coverImage": {
+            "title": "Next js image from wikipedia",
+            "alt": "Next js",
+            "src": "https://res.cloudinary.com/biaksangmunsong/image/upload/c_scale,f_auto,q_auto,w_1000/v1610404971/10-14-Night_ndqbrd.jpg"
+        },
+        "paragraph1": "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications."
+    }
+}

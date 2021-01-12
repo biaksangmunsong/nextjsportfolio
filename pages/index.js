@@ -2,12 +2,10 @@ import { useEffect } from "react"
 import Head from "next/head"
 import fs from "fs"
 import path from "path"
-import matter from "gray-matter"
-import htmlContent from "../actions/htmlContent"
 import HomePage from "../styles/styled-components/pages/HomePage"
 import Header from "../components/Header"
 
-const Home = ({ metaData, content }) => {
+const Home = ({ pageData }) => {
 
   useEffect(()=>{
     if (window.netlifyIdentity) {
@@ -24,13 +22,19 @@ const Home = ({ metaData, content }) => {
   return (
     <>
       <Head>
-        <title>{ metaData.title }</title>
-        <meta name="description" content={ metaData.desc } key="description" />
+        <title>{ pageData.title }</title>
+        <meta name="description" content={ pageData.description } key="description" />
       </Head>
       <HomePage className="homepage">
         <Header/>
         <div className="__content">
-          { htmlContent(content) }
+          <h1>{ pageData.content.heading1 }</h1>
+          <img
+            src={ pageData.content.coverImage.src }
+            alt={ pageData.content.coverImage.alt }
+            title={ pageData.content.coverImage.title }
+          />
+          <p>{ pageData.content.paragraph1 }</p>
         </div>
       </HomePage>
     </>
@@ -39,16 +43,12 @@ const Home = ({ metaData, content }) => {
 
 export const getStaticProps = () => {
 
-  let pageData = fs.readFileSync(path.join(process.cwd(), "page-data", "indexPage.md")).toString()
-  pageData = matter(pageData)
-  
-  const metaData = pageData.data
-  const content = pageData.content
+  let pageData = fs.readFileSync(path.join(process.cwd(), "page-data", "indexPage.json"))
+  pageData = JSON.parse(pageData)
 
   return {
     props: {
-      metaData,
-      content
+      pageData
     }
   }
 
