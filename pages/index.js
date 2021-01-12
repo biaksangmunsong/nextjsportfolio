@@ -32,13 +32,13 @@ const Home = ({ pageData }) => {
       <HomePage className="homepage">
         <Header/>
         <div className="__content">
-          <h1>{ pageData.body.heading1 }</h1>
+          <h1>{ pageData.heading1 }</h1>
           <img
-            src={ require(`../static/images/${ imageName(pageData.body.coverImage) }?size=1000`) }
+            src={ require(`../static/images/${ imageName(pageData.coverImage) }?size=1000`) }
             // alt={ pageData.content.coverImage.alt }
             // title={ pageData.content.coverImage.title }
           />
-          <p>{ pageData.body.paragraph1 }</p>
+          <p>{ pageData.paragraph1 }</p>
         </div>
       </HomePage>
     </>

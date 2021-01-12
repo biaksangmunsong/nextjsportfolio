@@ -27,18 +27,19 @@ collections:
       - name: "home_page"
         label: "Home page"
         file: "page-data/homePage.json"
-        format: "json-frontmatter"
-        extension: "json"
         fields:
           - { name: "title", label: "Page title", widget: "string" }
           - { name: "description", label: "Page description", widget: "string" }
-          - name: "body"
-            label: "Body"
-            widget: "object"
-            fields:
-              - { name: "heading1", label: "Heading 1", widget: "text" }
-              - { name: "cover_image", label: "Cover image", widget: "image", allow_multiple: false }
-              - { name: "paragraph1", label: "Paragraph 1", widget: "text" }
+          - { name: "heading1", label: "Heading 1", widget: "text" }
+          - { name: "coverImage", label: "Cover image", widget: "image", allow_multiple: false }
+          - { name: "paragraph1", label: "Paragraph 1", widget: "text" }
+          # - name: "content"
+          #   label: "Content"
+          #   widget: "object"
+          #   fields:
+          #     - { name: "heading1", label: "Heading 1", widget: "text" }
+          #     - { name: "cover_image", label: "Cover image", widget: "image", allow_multiple: false }
+          #     - { name: "paragraph1", label: "Paragraph 1", widget: "text" }
       
       - name: "about_page"
         label: "About page"
