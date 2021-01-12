@@ -30,7 +30,7 @@ const CustomLink = ({ children, href }) => {
 }
 
 CustomLink.propTypes = {
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string.isRequired
 }
 
 export default CustomLink
