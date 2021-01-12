@@ -12,8 +12,9 @@
     <script>
       CMS.registerPreviewStyle("/admin/styles/page-preview.css")
       const PagePreview = createClass({
-        console.log(this.props)
         render: () => {
+          console.log(this.props)
+          
           return h(
             "div",
             { className: "about_page_content" },
