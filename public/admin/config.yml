@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "static/images/original"
 site_url: https://nextport-folio.netlify.app
@@ -28,24 +28,41 @@ collections:
       - name: "home_page"
         label: "Home page"
         file: "page-data/indexPage.json"
-        format: "json-frontmatter"
-        extension: "json"
         fields:
-          - { name: "title", label: "Page title", widget: "string" }
-          - { name: "description", label: "Page description", widget: "string" }
+          - name: "title"
+            label: "Page title"
+            widget: "string"
+          - name: "description"
+            label: "Page description"
+            widget: "string"
           - name: "content"
             label: "Content"
             widget: "object"
             fields:
-              - { name: "heading1", label: "Heading 1", widget: "text" }
-              - { name: "cover_image", label: "Cover image", widget: "image", allow_multiple: false }
-              - { name: "paragraph1", label: "Paragraph 1", widget: "text" }
+              - name: "heading1"
+                label: "Heading 1"
+                widget: "text"
+              - name: "cover_image"
+                label: "Cover image"
+                widget: "object"
+                fields:
+                  - name: "src"
+                    label: "Choose image"
+                    widget: "image"
+                    allow_multiple: false
+                  - name: "alt"
+                    label: "Alt text"
+                    widget: "string"
+                  - name: "title"
+                    label: "Title"
+                    widget: "string"
+              - name: "paragraph1"
+                label: "Paragraph 1"
+                widget: "text"
       
       - name: "about_page"
         label: "About page"
         file: "page-data/aboutPage.md"
-        format: "frontmatter"
-        extension: "md"
         preview_path: "about"
         fields:
           - name: "title"
