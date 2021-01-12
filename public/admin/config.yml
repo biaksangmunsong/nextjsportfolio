@@ -29,22 +29,27 @@ collections:
         file: "/page-data/homePage.json"
         format: "json-frontmatter"
         extension: "json"
+        widget: "object"
         fields:
-          - { name: "title", label: "Page title", widget: "string" }
-          - { name: "description", label: "Page description", widget: "string" }
-          # - name: "body"
-          #   label: "Body"
-          #   fields:
-          #     - name: "heading1"
-          #       label: "Heading 1"
-          #       widget: "text"
-          #     - name: "cover_image"
-          #       label: "Cover image"
-          #       widget: "image"
-          #       allow_multiple: false
-          #     - name: "paragraph1"
-          #       label: "Paragraph 1"
-          #       widget: "text"
+          - name: "title"
+            label: "Page title"
+            widget: "string"
+          - name: "description"
+            label: "Page description"
+            widget: "string"
+          - name: "body"
+            label: "Body"
+            fields:
+              - name: "heading1"
+                label: "Heading 1"
+                widget: "text"
+              - name: "cover_image"
+                label: "Cover image"
+                widget: "image"
+                allow_multiple: false
+              - name: "paragraph1"
+                label: "Paragraph 1"
+                widget: "text"
       - name: "about_page"
         label: "About page"
         file: "/page-data/aboutPage.md"
