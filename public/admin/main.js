@@ -1,11 +1,11 @@
-const htmlContent = require("../../actions/htmlContent")
+import htmlContent from "../../actions/htmlContent"
 CMS.registerPreviewStyle("/admin/styles/page-preview.css")
 
 const PagePreview = createClass({
     render: function(){
         var entry = this.props.entry
         var body = entry.getIn(["data", "body"])
-        console.log(body)
+        console.log(htmlContent)
     
         return h(
             "div",
