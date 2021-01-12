@@ -1,3 +1,4 @@
+import htmlContent from "../../actions/htmlContent"
 CMS.registerPreviewStyle("/admin/styles/page-preview.css")
 
 const PagePreview = createClass({
@@ -9,7 +10,7 @@ const PagePreview = createClass({
         return h(
             "div",
             { className: "about_page_content" },
-            this.props.widgetFor("body")
+            htmlContent(body)
         )
     }
 })
