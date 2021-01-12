@@ -9,23 +9,6 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script type="module">
-      CMS.registerPreviewStyle("/admin/styles/page-preview.css")
-      import PagePreview from "/components/PagePreview"
-      CMS.registerPreviweTemplate("about_page", PagePreview)
-      // const PagePreview = createClass({
-      //   render: function(){
-      //     var entry = this.props.entry
-      //     var body = entry.getIn(["data", "body"])
-      //     console.log(body)
-      //     return h(
-      //       "div",
-      //       { className: "about_page_content" },
-      //       this.props.widgetFor("body")
-      //     )
-      //   }
-      // })
-      // CMS.registerPreviewTemplate("about_page", )
-    </script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
