@@ -29,7 +29,6 @@ collections:
         file: "/page-data/homePage.json"
         format: "json-frontmatter"
         extension: "json"
-        widget: "object"
         fields:
           - name: "title"
             label: "Page title"
@@ -39,6 +38,7 @@ collections:
             widget: "string"
           - name: "body"
             label: "Body"
+            widget: "object"
             fields:
               - name: "heading1"
                 label: "Heading 1"
