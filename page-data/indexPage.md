@@ -1,9 +1,6 @@
 ---
-
 title: Next.js portfolio
 description: Hello I'm Next.js, I'm a react server side renderer and also a static site generator
-updatedAt: 08-01-2021
-
 ---
 
 # Hello, I'm ``React.js``, I'm a react server side renderer and also a static site generator
