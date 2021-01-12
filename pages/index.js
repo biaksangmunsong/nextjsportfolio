@@ -18,6 +18,10 @@ const Home = ({ pageData }) => {
       })
     }
   }, [])
+
+  const imageName = src => {
+    return src.split("/")[src.split("/").length - 1]
+  }
   
   return (
     <>
@@ -30,7 +34,7 @@ const Home = ({ pageData }) => {
         <div className="__content">
           <h1>{ pageData.content.heading1 }</h1>
           <img
-            src={ pageData.content.coverImage.src }
+            src={ require(`../static/images/${ imageName(pageData.content.coverImage.src) }?size=1000`) }
             alt={ pageData.content.coverImage.alt }
             title={ pageData.content.coverImage.title }
           />

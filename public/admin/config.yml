@@ -1,18 +1,21 @@
 backend:
   name: git-gateway
   branch: main
+publish_mode: editorial_workflow
+media_folder: "static/images"
+public_folder: "static/images/original"
 site_url: https://nextport-folio.netlify.app
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: "biaksangmunsong"
-    api_key: "899542633858753"
-    default_transformations:
-      - - fetch_format: auto
-          width: 1000
-          quality: auto
-          crop: scale
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: "biaksangmunsong"
+#     api_key: "899542633858753"
+#     default_transformations:
+#       - - fetch_format: auto
+#           width: 1000
+#           quality: auto
+#           crop: scale
 
 collections:
   - name: "pages"
