@@ -11,18 +11,7 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
       CMS.registerPreviewStyle("/admin/styles/page-preview.css")
-      const PagePreview = createClass({
-        render: function(){
-          var entry = this.props.entry
-          var body = entry.getIn(["data", "body"])
-          console.log(body)
-          return h(
-            "div",
-            { className: "about_page_content" },
-            this.props.widgetFor("body")
-          )
-        },
-      })
+      import PagePreview from "../../components/PagePreview"
       CMS.registerPreviewTemplate("about_page", PagePreview)
     </script>
   </body>
