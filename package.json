@@ -19,8 +19,6 @@
     "unified": "^9.2.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^1.0.5",
-    "babel-plugin-styled-components": "^1.12.0",
-    "critters": "^0.0.6"
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
