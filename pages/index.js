@@ -18,9 +18,10 @@ const Home = ({ pageData }) => {
       })
     }
   }, [])
-
-  const imageName = src => {
-    return src.split("/")[src.split("/").length - 1]
+  
+  const image = src => {
+    const imageName = src.split("/")[src.split("/").length - 1]
+    return require(`../static/images/${ imageName }?resize&sizes[]=300&sizes[]=600&sizes[]=1000`)
   }
   
   return (
@@ -34,7 +35,8 @@ const Home = ({ pageData }) => {
         <div className="__content">
           <h1>{ pageData.body.heading1 }</h1>
           <img
-            src={ require(`../static/images/${ imageName(pageData.body.cover_image.src) }?size=1000`) }
+            src={ image(pageData.body.cover_image.src).src }
+            srcSet={ image(pageData.body.cover_image.src).srcSet }
             alt={ pageData.body.cover_image.alt }
             title={ pageData.body.cover_image.title }
           />

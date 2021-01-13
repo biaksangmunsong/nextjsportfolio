@@ -2,8 +2,9 @@ import PropTypes from "prop-types"
 
 const CustomImage = props => {
 
-    const imageName = src => {
-        return src.split("/")[src.split("/").length - 1]
+    const image = src => {
+        const imageName = src.split("/")[src.split("/").length - 1]
+        return require(`../static/images/${ imageName }?resize&sizes[]=300&sizes[]=600&sizes[]=1000`)
     }
 
     return props.src.startsWith("http") ?
@@ -11,7 +12,8 @@ const CustomImage = props => {
     (props.src.startsWith("/static/images/") || props.src.startsWith("static/images/")) ?
     <img
         { ...props }
-        src={ require(`../static/images/${ imageName(props.src) }?size=1000`) }
+        src={ image(props.src).src }
+        srcSet={ image(props.src).srcSet }
     /> :
     <img { ...props }/>
 
